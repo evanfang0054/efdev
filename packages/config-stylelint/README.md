@@ -1,4 +1,4 @@
-# config-stylelint
+# @efdev/config-stylelint
 
 > stylelint 配置
 
@@ -22,6 +22,6 @@ npm install stylelint -D
 
 ```json
 {
-  "extends": "config-stylelint"
+  "extends": "@efdev/config-stylelint"
 }
 ```
