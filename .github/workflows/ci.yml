@@ -50,7 +50,7 @@ jobs:
 
       # 打包代码
       - name: Build Project
-        run: pnpm run build
+        run: pnpm run build:docs
 
       # 部署到github
       - name: Deploy to Github
