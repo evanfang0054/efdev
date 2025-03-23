@@ -1,0 +1,34 @@
+{
+  "name": "@efdev/config-commitlint",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "commitlint配置",
+  "keywords": [
+    "commitlint"
+  ],
+  "author": "evanfang",
+  "homepage": "https://github.com/evanfang0054/efdev#readme",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evanfang0054/efdev.git",
+    "directory": "packages/config-commitlint"
+  },
+  "bugs": {
+    "url": "https://github.com/evanfang0054/efdev/issues"
+  },
+  "peerDependencies": {
+    "commitlint": "^17.0.0"
+  },
+  "dependencies": {
+    "conventional-changelog-conventionalcommits": "^4.5.0"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

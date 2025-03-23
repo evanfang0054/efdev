@@ -1,0 +1,36 @@
+{
+  "import": ["@cspell/dict-lorem-ipsum/cspell-ext.json"],
+  "caseSensitive": false,
+  "dictionaries": ["custom-words"],
+  "dictionaryDefinitions": [
+    {
+      "name": "custom-words",
+      "path": "./.cspell/custom-words.txt",
+      "addWords": true
+    }
+  ],
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/dist/**",
+    "**/.vscode/**",
+    "**/docs/**",
+    "pnpm-lock.yaml",
+    "LICENSE"
+  ],
+  "patterns": [
+    {
+      "name": "comment-single-line",
+      "pattern": "//[/*]?.*(?:*/)?/g"
+    },
+    {
+      "name": "comment-multi-line",
+      "pattern": "/(?:\\/\\*[\\s\\S]*?\\*\\/)/g"
+    },
+    {
+      "name": "comments",
+      "pattern": ["comment-single-line", "comment-multi-line"]
+    }
+  ],
+  "ignoreRegExpList": ["comments"]
+}

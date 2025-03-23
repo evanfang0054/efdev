@@ -1,0 +1,30 @@
+{
+  "name": "@efdev/config-markdownlint",
+  "version": "1.0.0",
+  "main": "index.json",
+  "description": "markdownlint配置",
+  "keywords": [
+    "markdownlint"
+  ],
+  "author": "evanfang",
+  "homepage": "https://github.com/evanfang0054/efdev#readme",
+  "license": "MIT",
+  "files": [
+    "index.json",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evanfang0054/efdev.git",
+    "directory": "packages/config-markdownlint"
+  },
+  "bugs": {
+    "url": "https://github.com/evanfang0054/efdev/issues"
+  },
+  "peerDependencies": {
+    "markdownlint": "^0.29.0"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

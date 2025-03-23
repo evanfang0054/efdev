@@ -1,0 +1,35 @@
+{
+  "name": "@efdev/config-stylelint",
+  "version": "1.0.0",
+  "main": "index.json",
+  "description": "stylelint配置",
+  "keywords": [
+    "stylelint"
+  ],
+  "author": "evanfang",
+  "homepage": "https://github.com/evanfang0054/efdev#readme",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evanfang0054/efdev.git",
+    "directory": "packages/config-stylelint"
+  },
+  "bugs": {
+    "url": "https://github.com/evanfang0054/efdev/issues"
+  },
+  "peerDependencies": {
+    "stylelint": ">=8.3.0",
+    "stylelint-scss": ">=2.0.0"
+  },
+  "devDependencies": {
+    "stylelint": "^14.3.0",
+    "stylelint-scss": "^4.1.0"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
