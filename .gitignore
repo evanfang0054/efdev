@@ -7,9 +7,23 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
+node_modules
+packages/**/node_modules
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build output
+/dist
+packages/**/dist
+/build
+/out
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
+!.vscode/settings.json
 .idea
 *.suo
 *.ntvs*
@@ -17,12 +31,42 @@ lerna-debug.log*
 *.sln
 *.sw?
 
-node_modules
-/dist
+# Environment files
+.env
+.env.*
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Cache and temp files
+.cache
+.temp
+.tmp
 .dumi/tmp
 .dumi/tmp-production
-.DS_Store
 .cspellcache
+.turbo
 
-pnpm-lock.yaml
-packages/**/node_modules
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Test coverage
+coverage
+.nyc_output
+
+# Debug files
+debug
+.debug
+
+# Misc
+*.bak
+*.swp
+*.swo
+.history
