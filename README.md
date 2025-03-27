@@ -45,7 +45,7 @@ git commit -m "docs: 更新文档"
 
 ### 目录结构
 
-``` bash
+```bash
 ├── packages/           # 子包目录
 ├── docs/              # 文档
 └── package.json       # 项目配置
@@ -60,14 +60,3 @@ git commit -m "docs: 更新文档"
 - StyleLint - CSS 代码检查
 - CommitLint - Git 提交信息检查
 - MarkdownLint - Markdown 文档检查
-
-### 常用命令
-
-```bash
-# 生成更新日志
-$ pnpm run changelog
-```
-
-## 📝 许可证
-
-[MIT](./LICENSE)

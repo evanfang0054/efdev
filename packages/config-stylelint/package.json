@@ -1,7 +1,7 @@
 {
   "name": "@efdev/config-stylelint",
   "version": "1.0.0",
-  "main": "index.json",
+  "main": "index.js",
   "description": "stylelint配置",
   "keywords": [
     "stylelint"
