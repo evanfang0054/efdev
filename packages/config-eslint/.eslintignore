@@ -1,0 +1,47 @@
+# 构建输出目录
+dist/
+build/
+coverage/
+lib-cov/
+.nyc_output/
+
+# 依赖目录
+node_modules/
+bower_components/
+vendor/
+sea-modules/
+
+# 测试和示例目录
+test/
+demo/
+examples/
+__tests__/
+__mocks__/
+
+# 临时和缓存目录
+.tmp/
+.temp/
+.cache/
+zip/
+
+# 编译和打包文件
+**/*.min.js
+**/*-min.js
+**/*.bundle.js
+**/*.umd.js
+**/*.esm.js
+**/*.cjs.js
+
+# 类型声明文件
+**/*.d.ts
+
+# IDE和编辑器文件
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# 其他
+APP-META/
+lib/
