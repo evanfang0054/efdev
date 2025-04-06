@@ -19,12 +19,17 @@
     "checkspell": "cspell lint --dot --gitignore --color --cache --show-suggestions \"packages/**/*.@(html|js|cjs|mjs|ts|tsx|css|scss|md)\"",
     "changeset": "changeset",
     "version": "changeset version",
-    "release": "turbo run build && changeset publish"
+    "release": "turbo run build && changeset publish",
+    "lint:markdown": "markdownlint README.md",
+    "lint:eslint": "eslint ."
   },
   "keywords": [
     "evanfang",
     "efdev",
-    "template"
+    "config",
+    "eslint",
+    "markdownlint",
+    "stylelint"
   ],
   "authors": [
     "evanfang"
@@ -33,32 +38,35 @@
     "node": ">=18.16.0"
   },
   "license": "MIT",
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
   "lint-staged": {
     "*.{md,json}": [
       "prettier --write --no-error-on-unmatched-pattern"
+    ],
+    "*.{js,ts}": [
+      "eslint . --fix"
     ]
   },
   "devDependencies": {
     "@changesets/cli": "^2.28.1",
     "@commitlint/cli": "^17.1.2",
-    "@commitlint/config-conventional": "^17.1.0",
     "@types/node": "^20.9.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "@typescript-eslint/eslint-plugin": "^7.0.0",
-    "@typescript-eslint/parser": "^7.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
     "cross-env": "^7.0.2",
     "cspell": "^8.12.1",
     "dumi": "^2.4.6",
     "esbuild": "^0.25.1",
-    "eslint": "^9.23.0",
+    "eslint": "^8.7.0",
+    "eslint-config-egg": "^10.0.0",
+    "eslint-config-prettier": "^8.0.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.25.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "husky": "^9.1.1",
     "lint-staged": "^13.0.3",
+    "markdownlint": "^0.29.0",
     "prettier": "^3.2.5",
     "rimraf": "^5.0.5",
     "ts-node": "^9.1.1",
