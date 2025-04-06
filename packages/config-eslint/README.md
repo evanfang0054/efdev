@@ -102,16 +102,19 @@ yarn add -D eslint-config-prettier eslint-plugin-prettier
 
 修改 `.eslintrc.js` 配置，添加 Prettier 支持：
 
-````javascript
+```javascript
 // 基础项目
 module.exports = {
   extends: ['@efdev/config-eslint', 'prettier'],
 };
+```
 
+```javascript
 // TypeScript 项目
 module.exports = {
   extends: ['@efdev/config-eslint/typescript', 'prettier'],
 };
+```
 
 > **注意**：确保 `prettier` 配置位于 `extends` 数组的最后位置，以避免其他配置覆盖 Prettier 规则。
 
@@ -134,7 +137,7 @@ module.exports = {
     'no-unused-vars': 'error',
   },
 };
-````
+```
 
 ## 📝 规则说明
 
