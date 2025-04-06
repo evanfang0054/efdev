@@ -1,5 +1,11 @@
 # @efdev/config-commitlint
 
+## 1.0.1
+
+### Patch Changes
+
+- 细微优化
+
 ## 1.0.0
 
 ### Major Changes
