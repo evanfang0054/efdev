@@ -36,7 +36,7 @@ config-eslint/
 ### JavaScript 项目配置
 
 ```bash
-pnpm add -D @efdev/config-eslint @babel/core @babel/eslint-parser eslint-plugin-import
+pnpm add -D @efdev/config-eslint @babel/core@7.16.0 @babel/eslint-parser@7.16.3 eslint-plugin-import@2.25.0
 ```
 
 ```javascript
@@ -48,7 +48,7 @@ module.exports = {
 ### TypeScript 项目配置
 
 ```bash
-pnpm add -D @efdev/config-eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import eslint-import-resolver-typescript
+pnpm add -D @efdev/config-eslint @typescript-eslint/parser@5.0.0 @typescript-eslint/eslint-plugin@5.0.0 eslint-plugin-import@2.25.0 eslint-import-resolver-typescript@2.5.0
 ```
 
 ```javascript
@@ -60,7 +60,7 @@ module.exports = {
 ### Node.js + JavaScript 项目配置
 
 ```bash
-pnpm add -D @efdev/config-eslint @babel/core @babel/eslint-parser eslint-plugin-import eslint-config-egg
+pnpm add -D @efdev/config-eslint @babel/core@7.16.0 @babel/eslint-parser@7.16.3 eslint-plugin-import@2.25.0 eslint-config-egg@10.0.0
 ```
 
 ```javascript
@@ -72,7 +72,7 @@ module.exports = {
 ### Node.js + TypeScript 项目配置
 
 ```bash
-pnpm add -D @efdev/config-eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import eslint-import-resolver-typescript eslint-config-egg
+pnpm add -D @efdev/config-eslint @typescript-eslint/parser@5.0.0 @typescript-eslint/eslint-plugin@5.0.0 eslint-plugin-import@2.25.0 eslint-import-resolver-typescript@2.5.0 eslint-config-egg@10.0.0
 ```
 
 ```javascript
@@ -89,13 +89,13 @@ module.exports = {
 
 ```bash
 # pnpm
-pnpm add -D eslint-config-prettier eslint-plugin-prettier
+pnpm add -D eslint-config-prettier@8.0.0 eslint-plugin-prettier@4.0.0
 
 # npm
-npm install --save-dev eslint-config-prettier eslint-plugin-prettier
+npm install --save-dev eslint-config-prettier@8.0.0 eslint-plugin-prettier@4.0.0
 
 # yarn
-yarn add -D eslint-config-prettier eslint-plugin-prettier
+yarn add -D eslint-config-prettier@8.0.0 eslint-plugin-prettier@4.0.0
 ```
 
 ### ESLint 集成
