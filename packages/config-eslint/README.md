@@ -36,48 +36,48 @@ config-eslint/
 ### JavaScript 项目配置
 
 ```bash
-pnpm add -D @efdev/config-eslint @babel/core@7.16.0 @babel/eslint-parser@7.16.3 eslint-plugin-import@2.25.0
+pnpm add -D eslint-config-efdev@npm:@efdev/config-eslint @babel/core@7.16.0 @babel/eslint-parser@7.16.3 eslint-plugin-import@2.25.0
 ```
 
 ```javascript
 module.exports = {
-  extends: ['@efdev/config-eslint'],
+  extends: ['efdev'],
 };
 ```
 
 ### TypeScript 项目配置
 
 ```bash
-pnpm add -D @efdev/config-eslint @typescript-eslint/parser@5.0.0 @typescript-eslint/eslint-plugin@5.0.0 eslint-plugin-import@2.25.0 eslint-import-resolver-typescript@2.5.0
+pnpm add -D eslint-config-efdev@npm:@efdev/config-eslint @typescript-eslint/parser@5.0.0 @typescript-eslint/eslint-plugin@5.0.0 eslint-plugin-import@2.25.0 eslint-import-resolver-typescript@2.5.0
 ```
 
 ```javascript
 module.exports = {
-  extends: ['@efdev/config-eslint/typescript'],
+  extends: ['efdev/typescript'],
 };
 ```
 
 ### Node.js + JavaScript 项目配置
 
 ```bash
-pnpm add -D @efdev/config-eslint @babel/core@7.16.0 @babel/eslint-parser@7.16.3 eslint-plugin-import@2.25.0 eslint-config-egg@10.0.0
+pnpm add -D eslint-config-efdev@npm:@efdev/config-eslint @babel/core@7.16.0 @babel/eslint-parser@7.16.3 eslint-plugin-import@2.25.0 eslint-config-egg@10.0.0
 ```
 
 ```javascript
 module.exports = {
-  extends: ['@efdev/config-eslint/node'],
+  extends: ['efdev/node'],
 };
 ```
 
 ### Node.js + TypeScript 项目配置
 
 ```bash
-pnpm add -D @efdev/config-eslint @typescript-eslint/parser@5.0.0 @typescript-eslint/eslint-plugin@5.0.0 eslint-plugin-import@2.25.0 eslint-import-resolver-typescript@2.5.0 eslint-config-egg@10.0.0
+pnpm add -D eslint-config-efdev@npm:@efdev/config-eslint @typescript-eslint/parser@5.0.0 @typescript-eslint/eslint-plugin@5.0.0 eslint-plugin-import@2.25.0 eslint-import-resolver-typescript@2.5.0 eslint-config-egg@10.0.0
 ```
 
 ```javascript
 module.exports = {
-  extends: ['@efdev/config-eslint/node', '@efdev/config-eslint/typescript'],
+  extends: ['efdev/node', 'efdev/typescript'],
 };
 ```
 
@@ -105,14 +105,14 @@ yarn add -D eslint-config-prettier@8.0.0 eslint-plugin-prettier@4.0.0
 ```javascript
 // 基础项目
 module.exports = {
-  extends: ['@efdev/config-eslint', 'prettier'],
+  extends: ['efdev', 'prettier'],
 };
 ```
 
 ```javascript
 // TypeScript 项目
 module.exports = {
-  extends: ['@efdev/config-eslint/typescript', 'prettier'],
+  extends: ['efdev/typescript', 'prettier'],
 };
 ```
 
@@ -120,9 +120,9 @@ module.exports = {
 
 ## 📋 可用的配置
 
-- `@efdev/config-eslint`: 基础配置
-- `@efdev/config-eslint/typescript`: TypeScript 配置
-- `@efdev/config-eslint/node`: Node.js 配置
+- `efdev`: 基础配置
+- `efdev/typescript`: TypeScript 配置
+- `efdev/node`: Node.js 配置
 
 ## 🔧 自定义规则
 
@@ -130,7 +130,7 @@ module.exports = {
 
 ```javascript
 module.exports = {
-  extends: ['@efdev/config-eslint'],
+  extends: ['efdev'],
   rules: {
     // 自定义规则
     'no-console': 'warn',
