@@ -1,5 +1,11 @@
 # @efdev/config-eslint
 
+## 1.0.2
+
+### Patch Changes
+
+- 优化import/no-cycle配置
+
 ## 1.0.1
 
 ### Patch Changes
