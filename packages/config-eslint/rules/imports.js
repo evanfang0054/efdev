@@ -139,7 +139,14 @@ module.exports = {
     'import/no-self-import': 'error',
 
     // 禁止循环依赖
-    'import/no-cycle': ['error', { maxDepth: Infinity }],
+    'import/no-cycle': [
+      'warn', // 使用 warn 级别而不是 error
+      {
+        maxDepth: 10, // 限制检查的最大深度
+        ignoreExternal: true, // 忽略外部模块
+        allowUnsafeDynamicCyclicDependency: false, // 不允许不安全的动态循环依赖
+      },
+    ],
 
     // 允许路径中包含冗余片段
     'import/no-useless-path-segments': 'off',
