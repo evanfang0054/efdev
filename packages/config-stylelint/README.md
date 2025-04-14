@@ -9,11 +9,7 @@
 需要先行安装 [stylelint](https://www.npmjs.com/package/stylelint) 、 [stylelint-scss](https://www.npmjs.com/package/stylelint-scss)、 [stylelint-order](https://www.npmjs.com/package/stylelint-order)：
 
 ```bash
-npm install config-stylelint -D
-```
-
-```bash
-npm install stylelint -D
+npm install config-stylelint stylelint -D
 ```
 
 ## 使用
