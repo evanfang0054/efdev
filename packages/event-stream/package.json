@@ -1,0 +1,53 @@
+{
+  "name": "@efdev/event-stream",
+  "version": "1.0.0",
+  "description": "高性能事件流处理库，支持SSE和自定义事件流",
+  "type": "module",
+  "keywords": [
+    "event-stream",
+    "sse",
+    "streaming",
+    "real-time",
+    "efdev"
+  ],
+  "author": "evanfang",
+  "homepage": "https://github.com/evanfang0054/efdev#readme",
+  "license": "MIT",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/cjs/types/index.d.ts",
+  "unpkg": "./dist/index.umd.js",
+  "jsdelivr": "./dist/index.umd.js",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evanfang0054/efdev.git",
+    "directory": "packages/event-stream"
+  },
+  "bugs": {
+    "url": "https://github.com/evanfang0054/efdev/issues"
+  },
+  "scripts": {
+    "build": "pnpm run build:cjs && pnpm run build:esm",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "test": "vitest run --coverage",
+    "test:watch": "vitest watch"
+  },
+  "engines": {
+    "node": ">=16.14.0"
+  },
+  "devDependencies": {
+    "@azure/abort-controller": "^1.1.0",
+    "@types/nanoid": "^3.0.0",
+    "@types/node": "^22.13.1",
+    "jsdom": "^26.1.0",
+    "typescript": "^4.9.0",
+    "nanoid": "^5.1.5"
+  },
+  "dependencies": {
+    "@microsoft/fetch-event-source": "2.0.1"
+  }
+}

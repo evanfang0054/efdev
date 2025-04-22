@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "lib": ["ES2018", "DOM", "DOM.Iterable"],
+    "types": ["vitest/globals"],
+    "outDir": "./dist",
+    "declaration": true,
+    "sourceMap": true,
+    "removeComments": false,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "downlevelIteration": true,
+    "composite": false,
+    "rootDir": "src"
+  },
+  "include": ["src/**/*"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.test.ts",
+    "**/*.spec.ts",
+    "src/__tests__/*"
+  ]
+}
