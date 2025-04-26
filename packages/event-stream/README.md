@@ -426,3 +426,44 @@ enum EventType {
      cancelAllRequests();
    });
    ```
+
+## 🗂️ 打包与导入
+
+### ESM 模块
+
+在支持原生 ESM 的环境中，您可以直接这样引入：
+
+```typescript
+import { createEventStream } from '@efdev/event-stream';
+```
+
+### CJS 模块
+
+如果您的项目使用 CommonJS 模块：
+
+```javascript
+const { createEventStream } = require('@efdev/event-stream');
+```
+
+## 🔄 与 React Hooks 结合示例
+
+您也可以基于 `createEventStream` 封装一个自定义 Hook：
+
+```tsx
+import { useEffect, useRef, useState } from 'react';
+import { createEventStream } from '@efdev/event-stream';
+
+export function useEventStream<T>(url: string) {
+  const [data, setData] = useState<T | null>(null);
+  const controllerRef = useRef<any>(null);
+
+  useEffect(() => {
+    controllerRef.current = createEventStream<T>(url, {
+      onMessage: (msg) => setData(msg.data),
+    });
+    return () => controllerRef.current.dispose();
+  }, [url]);
+
+  return data;
+}
+```
