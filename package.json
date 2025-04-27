@@ -19,7 +19,8 @@
     "checkspell": "cspell lint --dot --gitignore --color --cache --show-suggestions \"packages/**/*.@(html|js|cjs|mjs|ts|tsx|css|scss|md)\"",
     "changeset": "changeset",
     "version": "changeset version",
-    "release": "turbo run build && changeset publish",
+    "release": "changeset publish",
+    "release:build": "turbo run build && changeset publish",
     "lint:markdown": "markdownlint README.md",
     "lint:eslint": "eslint ."
   },

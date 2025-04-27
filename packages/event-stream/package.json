@@ -1,13 +1,12 @@
 {
   "name": "@efdev/event-stream",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "高性能事件流处理库，支持SSE和自定义事件流",
   "type": "module",
   "keywords": [
     "event-stream",
     "sse",
     "streaming",
-    "real-time",
     "efdev"
   ],
   "author": "evanfang",
@@ -16,10 +15,10 @@
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/cjs/types/index.d.ts",
-  "unpkg": "./dist/index.umd.js",
-  "jsdelivr": "./dist/index.umd.js",
   "files": [
-    "dist"
+    "dist",
+    "CHANGELOG.md",
+    "README.md"
   ],
   "repository": {
     "type": "git",
