@@ -34,7 +34,8 @@
     "build:cjs": "tsc -p tsconfig.cjs.json",
     "build:esm": "tsc -p tsconfig.esm.json",
     "test": "vitest run --coverage",
-    "test:watch": "vitest watch"
+    "test:watch": "vitest watch",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist && rm -rf tsconfig.tsbuildinfo"
   },
   "engines": {
     "node": ">=16.14.0"
