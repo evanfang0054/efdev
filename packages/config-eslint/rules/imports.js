@@ -144,7 +144,6 @@ module.exports = {
       {
         maxDepth: 10, // 限制检查的最大深度
         ignoreExternal: true, // 忽略外部模块
-        allowUnsafeDynamicCyclicDependency: false, // 不允许不安全的动态循环依赖
       },
     ],
 

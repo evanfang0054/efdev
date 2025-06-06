@@ -48,6 +48,7 @@
     ]
   },
   "devDependencies": {
+    "eslint-config-efdev": "npm:@efdev/config-eslint@*",
     "@changesets/cli": "^2.28.1",
     "@commitlint/cli": "^17.1.2",
     "@types/node": "^20.9.0",
