@@ -1,0 +1,49 @@
+{
+  "name": "@efdev/any-to-txt",
+  "version": "1.0.0",
+  "description": "将任何文件转换为txt文件",
+  "keywords": [
+    "any-to-txt",
+    "txt",
+    "efdev"
+  ],
+  "author": "evanfang",
+  "homepage": "https://github.com/evanfang0054/efdev#readme",
+  "license": "MIT",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/cjs/types/index.d.ts",
+  "files": [
+    "dist",
+    "CHANGELOG.md",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evanfang0054/efdev.git",
+    "directory": "packages/any-to-txt"
+  },
+  "bugs": {
+    "url": "https://github.com/evanfang0054/efdev/issues"
+  },
+  "scripts": {
+    "build": "pnpm run build:cjs && pnpm run build:esm",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist && rm -rf tsconfig.tsbuildinfo"
+  },
+  "engines": {
+    "node": ">=16.14.0"
+  },
+  "bin": {
+    "any-to-txt": "dist/cjs/index.js"
+  },
+  "dependencies": {
+    "commander": "^12.0.0",
+    "cli-progress": "^3.12.0",
+    "ansi-colors": "^4.1.3"
+  },
+  "devDependencies": {
+    "@types/cli-progress": "^3.11.6"
+  }
+}
